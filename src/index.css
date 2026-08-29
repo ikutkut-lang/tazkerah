@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom scrollbar for tab navigation */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Print styles for certificates and commitment tickets */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  header, nav, footer, .no-print, button:not(.printable-button) {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  #printable-certificate, #printable-ticket, #printable-badge {
+    box-shadow: none !important;
+    border-width: 4px !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    page-break-inside: avoid;
+  }
+}

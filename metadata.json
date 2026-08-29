@@ -1,0 +1,6 @@
+{
+  "name": "برنامج تذكرة للقيم - مدارس التنوير الأهلية",
+  "description": "الموقع التفاعلي لبرنامج القيم التنويري تذكرة للمرحلتين (4-6) و (7-9) مع خطة الـ 45 دقيقة والأنشطة التفاعلية ونظام الاختبارات التقييمية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
